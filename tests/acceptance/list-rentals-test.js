@@ -6,7 +6,7 @@ moduleForAcceptance('Acceptance | list rentals');
 test('should redirect to rentals route', function (assert) {
   visit('/');
   andThen(function(){
-    assert.equel(currentURL(), '/rentals', 'should redirect automatically');
+    assert.equal(currentURL(), '/rentals', 'should redirect automatically');
   });
 });
 
